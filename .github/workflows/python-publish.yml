@@ -26,10 +26,6 @@ jobs:
           pip install build
       - name: Build package
         run: python -m build
-      - name: Debug OIDC Token
-        run: echo "${{ secrets.GITHUB_TOKEN }}"
-        env:
-          ACTIONS_ID_TOKEN_REQUEST_TOKEN: ${{ secrets.ACTIONS_ID_TOKEN_REQUEST_TOKEN }}
       - name: Publish package
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
