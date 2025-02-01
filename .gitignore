@@ -1,0 +1,21 @@
+# Byte-compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+
+# Testing and temporary files
+test.py
+*.log
+*.tmp
+*.swp
+.DS_Store
+
+# Build files
+build/
+dist/
+*.egg-info/
