@@ -1,6 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
+
 def get_version():
     version_file = os.path.join(
         os.path.dirname(__file__), "pyscreenrecorder", "__version__.py"
@@ -14,7 +15,7 @@ def get_version():
 setup(
     name="pyscreenrecorder",
     version=get_version(),
-    description="A Python package for screen recording with customizable resolution, FPS, and mouse tracking.",
+    description="A python package for screen recording with customizable resolution, FPS, and mouse tracking.",
     long_description=open("README.md", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
     url="https://github.com/SSujitX/pyscreenrecorder",

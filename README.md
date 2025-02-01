@@ -1,6 +1,6 @@
 # pyscreenrecorder
 
-`pyscreenrecorder` or python screen recorder is a powerful Python package for screen recording with an **optional mouse cursor overlay**.  
+Python screen recorder `pyscreenrecorder` is a powerful Python package for screen recording with an **optional mouse cursor overlay**.  
 It allows **high-performance screen capturing**, **custom resolution**, and **real-time mouse tracking**.
 
 ## ✨ Features
