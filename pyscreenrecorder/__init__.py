@@ -46,7 +46,6 @@ def ScreenRecorder(
     )
     pyRec.screenRecorder()
 
-
 __all__ = [
     "ScreenRecorder",
     "pyScreenRecorder",
