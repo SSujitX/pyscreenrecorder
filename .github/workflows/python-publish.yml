@@ -3,27 +3,24 @@ name: Upload Python Package
 on:
   push:
     tags:
-      - "[0-9]+.[0-9]+.[0-9]+"      # Stable versions (e.g., 1.0.0)
-      - "[0-9]+.[0-9]+.[0-9]+a[0-9]+"  # Alpha versions (e.g., 1.0.0a1)
-      - "[0-9]+.[0-9]+.[0-9]+b[0-9]+"  # Beta versions (e.g., 1.0.0b1)
-      - "[0-9]+.[0-9]+.[0-9]+rc[0-9]+" # Release candidates (e.g., 1.0.0rc1)
+      - "[0-9]+.[0-9]+.[0-9]+"
+      - "[0-9]+.[0-9]+.[0-9]+a[0-9]+"
+      - "[0-9]+.[0-9]+.[0-9]+b[0-9]+"
+      - "[0-9]+.[0-9]+.[0-9]+rc[0-9]+"
   release:
     types: [published]
-
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v3
         with:
           python-version: "3.12"
 
@@ -36,4 +33,7 @@ jobs:
         run: python -m build
 
       - name: Publish package
-        uses: pypa/gh-action-pypi-publish@v1
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          user: __token__
+          password: ${{ secrets.PYPI_API_TOKEN }}
