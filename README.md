@@ -1,6 +1,11 @@
-# pyscreenrecorder
+[![PyPI version](https://badge.fury.io/py/pyscreenrecorder.svg)](https://badge.fury.io/py/pyscreenrecorder)
+[![Python Versions](https://img.shields.io/badge/python-3.9%20|%203.10%20|%203.11%20|%203.12%20|%203.13-blue)](https://pypi.org/project/pyscreenrecorder/)
+[![Downloads](https://static.pepy.tech/badge/pyscreenrecorder)](https://pepy.tech/project/pyscreenrecorder)
+[![Downloads](https://static.pepy.tech/badge/pyscreenrecorder/week)](https://pepy.tech/project/pyscreenrecorder)
 
-Python screen recorder `pyscreenrecorder` is a powerful Python package for screen recording with an **optional mouse cursor overlay**.  
+# Python Screen Recorder
+
+Python screen recorder also `pyscreenrecorder` is a powerful Python package for screen recording with an **optional mouse cursor overlay**.  
 It allows **high-performance screen capturing**, **custom resolution**, and **real-time mouse tracking**.
 
 ## ✨ Features
@@ -172,3 +177,5 @@ This project is licensed under the **MIT License**.
 `pyscreenrecorder` is an **efficient**, **easy-to-use**, and **customizable** screen recording tool in Python. Whether you need **basic screen capturing** or **advanced mouse-tracked recordings**, this package provides all the features.
 
 🚀 **Try it today!** 🚀
+
+![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FSSujitX%2Fpyscreenrecorder&countColor=%23263759&labelStyle=upper)
